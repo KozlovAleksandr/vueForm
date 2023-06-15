@@ -1,21 +1,26 @@
 <template>
-  <h1>Hello world</h1>
+  <div class="container">
+    <EpmloyeeForm />
+  </div>
 </template>
 
 <script>
+import EpmloyeeForm from "./components/EpmloyeeForm.vue";
+
 export default {
   name: "App",
-  components: {},
+  components: {
+    EpmloyeeForm,
+  },
 };
 </script>
-
-<style lang="scss">
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+<style>
+.container {
+  position: relative;
+  max-width: 600px;
+  width: 100%;
+  background-color: bisque;
+  padding: 25px;
+  border-radius: 10px;
 }
 </style>
